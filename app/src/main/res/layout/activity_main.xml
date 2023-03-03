@@ -1,7 +1,171 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
     >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:textSize="24sp"
+      android:layout_margin="20dp"
+      android:text="@string/form_registrasi" />
+
+
+  <EditText
+      android:id="@+id/et_full_name"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:inputType="textPersonName"
+      android:hint="@string/full_name_hint"
+      tools:ignore="Autofill"
+      />
+
+  <TextView
+      android:id="@+id/tv_full_name_error"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textColor="@color/message_error"
+      android:visibility="gone"
+      tools:visibility="visible"
+      tools:text="Error"/>
+
+  <EditText
+      android:id="@+id/et_email"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/margin_between_view"
+      android:inputType="textEmailAddress"
+      android:hint="@string/email_hint"
+      tools:ignore="Autofill" />
+
+  <TextView
+      android:id="@+id/tv_email_error"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textColor="@color/message_error"
+      android:visibility="gone"
+      tools:visibility="visible"
+      tools:text="Error"/>
+
+  <TextView
+      android:id="@+id/tv_gender_label"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/margin_between_view"
+      android:hint="@string/gender_hint" />
+
+  <RadioGroup
+      android:id="@+id/rg_gender"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/rb_gender_male"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/male" />
+
+    <RadioButton
+        android:id="@+id/rb_gender_female"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/female" />
+  </RadioGroup>
+
+  <TextView
+      android:id="@+id/tv_gender_error"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textColor="@color/message_error"
+      android:visibility="gone"
+      tools:visibility="visible"
+      tools:text="Error"/>
+
+  <EditText
+      android:id="@+id/et_dob"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/margin_between_view"
+      android:focusableInTouchMode="false"
+      android:focusable="true"
+      android:clickable="true"
+      android:inputType="none"
+      android:hint="@string/dob_hint"
+      tools:ignore="Autofill,TextFields"/>
+
+  <TextView
+      android:id="@+id/tv_dob_error"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textColor="@color/message_error"
+      android:visibility="gone"
+      tools:visibility="visible"
+      tools:text="Error"/>
+
+  <EditText
+      android:id="@+id/et_address"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/margin_between_view"
+      android:inputType="textMultiLine"
+      android:gravity="start"
+      android:lines="3"
+      android:hint="@string/address_hint"
+      tools:ignore="Autofill"/>
+
+  <TextView
+      android:id="@+id/tv_address_error"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textColor="@color/message_error"
+      android:visibility="gone"
+      tools:visibility="visible"
+      tools:text="Error"/>
+
+  <TextView
+      android:id="@+id/tv_last_education_label"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/margin_between_view"
+      android:text="@string/last_education_hint" />
+
+  <Spinner
+      android:id="@+id/spinner_last_education"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:entries="@array/education_arr"/>
+
+  <TextView
+      android:id="@+id/tv_last_education_error"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textColor="@color/message_error"
+      android:visibility="gone"
+      tools:visibility="visible"
+      tools:text="Error"/>
+
+  <Button
+      android:id="@+id/btn_register"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/margin_between_view"
+      android:text="@string/register" />
+
+  <TextView
+      android:id="@+id/tv_register_result"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:textSize="16sp"
+      android:visibility="gone"
+      tools:visibility="visible"
+      tools:text="Registrasi Berhasil" />
+
+</LinearLayout>

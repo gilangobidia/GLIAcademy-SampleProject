@@ -1,3 +1,40 @@
 <resources>
   <string name="app_name">GLIAcademy-SampleProject</string>
+  <string name="form_registrasi">Form Registrasi</string>
+  <string name="full_name_hint">Nama Lengkap</string>
+  <string name="email_hint">Email</string>
+  <string name="gender_hint">Jenis Kelamin</string>
+  <string name="male">Pria</string>
+  <string name="female">Wanita</string>
+  <string name="dob_hint">Tanggal Lahir</string>
+  <string name="address_hint">Alamat</string>
+  <string name="last_education_hint">Pendidikan Terakhir</string>
+  <string name="register">Register</string>
+
+  <string name="date_format">%d-%d-%d</string>
+
+  <string name="full_name_error_empty">Nama tidak boleh kosong</string>
+  <string name="full_name_error_min_max_character">Nama harus 6 sampai 40 karakter</string>
+  <string name="email_error_empty">Email tidak boleh kosong</string>
+  <string name="gender_error_empty">Harap pilih jenis kelamin</string>
+  <string name="dob_error_empty">Tanggal lahir tidak boleh kosong</string>
+  <string name="address_error_empty">Alamat tidak boleh kosong</string>
+  <string name="last_education_error_empty">Harap pilih pendidikan terakhir</string>
+
+  <string name="registration_failed">Registrasi gagal</string>
+  <string name="registration_success">Registrasi berhasil</string>
+
+  <string-array name="education_arr">
+    <item>-- Pilih Pendidikan Terakhir --</item>
+    <item>SD</item>
+    <item>SMP</item>
+    <item>SMA</item>
+    <item>SMK</item>
+    <item>D3</item>
+    <item>D4</item>
+    <item>S1</item>
+    <item>S2</item>
+    <item>S3</item>
+  </string-array>
+
 </resources>
