@@ -2,6 +2,8 @@ package id.gliacademy.sampleproject
 
 import android.app.DatePickerDialog
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
@@ -9,8 +11,10 @@ import android.widget.RadioButton
 import android.widget.RadioGroup
 import android.widget.Spinner
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import id.gliacademy.sampleproject.Util.gotoSetting
 import java.util.Calendar
 
 class MainActivity : AppCompatActivity() {
@@ -188,4 +192,19 @@ class MainActivity : AppCompatActivity() {
     dpd.show()
   }
 
+
+  override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+    menuInflater.inflate(R.menu.menu, menu)
+    return super.onCreateOptionsMenu(menu)
+
+  }
+
+  override fun onOptionsItemSelected(item: MenuItem): Boolean {
+    when (item.itemId) {
+      R.id.change_language -> {
+        gotoSetting()
+      }
+    }
+    return super.onOptionsItemSelected(item)
+  }
 }

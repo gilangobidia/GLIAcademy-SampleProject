@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <string name="app_name">GLIAcademy-SampleProject</string>
+  <string name="form_registrasi">Form Registrasi</string>
+  <string name="full_name_hint">Nama Lengkap</string>
+  <string name="email_hint">Email</string>
+  <string name="gender_hint">Jenis Kelamin</string>
+  <string name="male">Pria</string>
+  <string name="female">Wanita</string>
+  <string name="dob_hint">Tanggal Lahir</string>
+  <string name="address_hint">Alamat</string>
+  <string name="last_education_hint">Pendidikan Terakhir</string>
+  <string name="register">Register</string>
+  <string name="ubah_bahasa">Ubah bahasa</string>
+</resources>

@@ -34,10 +34,7 @@
 
     <TextView
         android:id="@+id/tv_full_name_error"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/message_error"
-        android:visibility="gone"
+        style="@style/TextViewError"
         tools:visibility="visible"
         tools:text="Error"/>
 
@@ -52,10 +49,7 @@
 
     <TextView
         android:id="@+id/tv_email_error"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/message_error"
-        android:visibility="gone"
+        style="@style/TextViewError"
         tools:visibility="visible"
         tools:text="Error"/>
 
@@ -87,10 +81,8 @@
 
     <TextView
         android:id="@+id/tv_gender_error"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/message_error"
-        android:visibility="gone"
+        style="@style/TextViewError"
+
         tools:visibility="visible"
         tools:text="Error"/>
 
@@ -108,10 +100,7 @@
 
     <TextView
         android:id="@+id/tv_dob_error"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/message_error"
-        android:visibility="gone"
+        style="@style/TextViewError"
         tools:visibility="visible"
         tools:text="Error"/>
 
@@ -157,10 +146,11 @@
         tools:visibility="visible"
         tools:text="Error"/>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
         android:layout_marginTop="@dimen/margin_between_view"
         android:text="@string/register" />
 

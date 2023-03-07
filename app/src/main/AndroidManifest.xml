@@ -12,13 +12,23 @@
       android:theme="@style/Theme.GLIAcademySampleProject"
       tools:targetApi="31">
 
-    <activity android:name=".MainActivity"
-        android:exported="true">
+    <activity android:name=".intent.AActivity"
+        android:exported="true"
+        android:label="A Activity"
+        android:launchMode="singleTop">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
+
+    <activity android:name=".activity_result.InputActivity" />
+    <activity android:name=".intent.BActivity"
+        android:label="B Activity"/>
+    <activity android:name=".intent.CActivity"
+        android:label="C Activity"/>
+    <activity android:name=".intent.DActivity"
+        android:label="D Activity"/>
   </application>
 
 </manifest>
