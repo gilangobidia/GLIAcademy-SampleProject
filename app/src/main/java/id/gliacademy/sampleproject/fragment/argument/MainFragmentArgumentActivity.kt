@@ -12,7 +12,7 @@ class MainFragmentArgumentActivity: AppCompatActivity() {
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
-    setContentView(R.layout.activity_main_fragment)
+    setContentView(R.layout.activity_main_fragment_argument)
     btn = findViewById(R.id.btn_action)
     btn.setOnClickListener {
       setupDetailFragment()
