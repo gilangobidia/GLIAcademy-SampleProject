@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+  <Button
+      android:id="@+id/btn_toast"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Toast"
+      />
+
+  <Button
+      android:id="@+id/btn_snackbar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Snackbar"
+      android:layout_marginTop="16dp"/>
+
+  <Button
+      android:id="@+id/btn_bottom_sheet"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Bottom Sheet"
+      android:layout_marginTop="16dp"/>
+  <Button
+      android:id="@+id/btn_alert_dialog"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Alert Dialog"
+      android:layout_marginTop="16dp"/>
+  <Button
+      android:id="@+id/btn_view_binding"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="View Binding"
+      android:layout_marginTop="16dp"/>
+</LinearLayout>

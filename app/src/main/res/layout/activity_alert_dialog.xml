@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    >
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:padding="16dp">
+
+    <Button
+        android:id="@+id/btn_alertdialog_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="alertdialog 1"
+        />
+
+    <Button
+        android:id="@+id/btn_alertdialog_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="alertdialog 2"
+        android:layout_marginTop="16dp"/>
+
+  </LinearLayout>
+</ScrollView>
