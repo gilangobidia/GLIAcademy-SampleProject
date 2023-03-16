@@ -41,6 +41,10 @@ class MainActivity : AppCompatActivity() {
       btnApi2.setOnClickListener {
         startActivity(id.gliacademy.sampleproject.api_arch.view.ApiActivity.newIntent(this@MainActivity))
       }
+
+      btnApiRxJava.setOnClickListener {
+        startActivity(id.gliacademy.sampleproject.rxjava.view.ApiActivity.newIntent(this@MainActivity))
+      }
     }
   }
 
