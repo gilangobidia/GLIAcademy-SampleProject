@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+  <uses-permission android:name="android.permission.INTERNET" />
   <application
       android:allowBackup="true"
       android:dataExtractionRules="@xml/data_extraction_rules"
@@ -20,11 +21,11 @@
       </intent-filter>
     </activity>
 
-    <activity android:name=".toast.ToastActivity" />
-    <activity android:name=".snackbar.SnackbarActivity" />
-    <activity android:name=".bottomsheet.BottomSheetActivity" />
-    <activity android:name=".alertdialog.AlertDialogActivity" />
-    <activity android:name=".viewbinding.ViewBindingActivity" />
+    <activity android:name=".viewmodel.WithoutViewModelActivity" />
+    <activity android:name=".viewmodel.ViewModelActivity" />
+    <activity android:name=".livedata.LiveDataActivity" />
+    <activity android:name=".api.ApiActivity" />
+    <activity android:name=".api_arch.view.ApiActivity" />
   </application>
 
 </manifest>

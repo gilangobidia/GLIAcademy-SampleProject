@@ -13,36 +13,39 @@
       android:padding="16dp">
 
     <Button
-        android:id="@+id/btn_toast"
+        android:id="@+id/btn_without_view_model"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Toast"
+        android:text="Tanpa ViewModel"
         />
 
     <Button
-        android:id="@+id/btn_snackbar"
+        android:id="@+id/btn_view_model"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Snackbar"
-        android:layout_marginTop="16dp"/>
+        android:text="ViewModel"
+        />
 
     <Button
-        android:id="@+id/btn_bottom_sheet"
+        android:id="@+id/btn_live_data"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Bottom Sheet"
-        android:layout_marginTop="16dp"/>
+        android:text="ViewModel LiveData"
+        />
+
     <Button
-        android:id="@+id/btn_alert_dialog"
+        android:id="@+id/btn_api"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Alert Dialog"
-        android:layout_marginTop="16dp"/>
+        android:text="ViewModel LiveData API"
+        />
+
     <Button
-        android:id="@+id/btn_view_binding"
+        android:id="@+id/btn_api_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="View Binding"
-        android:layout_marginTop="16dp"/>
+        android:text="ViewModel LiveData API 2"
+        />
+
   </LinearLayout>
 </ScrollView>
