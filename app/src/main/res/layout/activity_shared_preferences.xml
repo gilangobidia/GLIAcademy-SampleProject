@@ -15,15 +15,23 @@
         android:id="@+id/btn_sharedpreferences"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SharedPreferences"
+        android:text="Basic SharedPreferences"
         />
 
     <Button
-        android:id="@+id/btn_room"
+        android:id="@+id/btn_get_sharedpreferences"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Room"
+        android:text="Get SharedPreferences"
         />
+
+    <Button
+        android:id="@+id/btn_encrypted_sharedpreferences"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Encrypted SharedPreferences"
+        />
+
 
   </LinearLayout>
 </ScrollView>

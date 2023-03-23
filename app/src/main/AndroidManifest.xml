@@ -21,12 +21,20 @@
       </intent-filter>
     </activity>
 
-    <activity android:name=".viewmodel.WithoutViewModelActivity" />
-    <activity android:name=".viewmodel.ViewModelActivity" />
-    <activity android:name=".livedata.LiveDataActivity" />
-    <activity android:name=".api.ApiActivity" />
-    <activity android:name=".api_arch.view.ApiActivity" />
-    <activity android:name=".rxjava.view.ApiActivity" />
+    <activity android:name=".sharedpreferences.SharedPreferencesActivity"
+        android:label="SharedPreferences"/>
+
+    <activity android:name=".sharedpreferences.basic.BasicSPActivity"
+        android:label="Basic SP"/>
+
+    <activity android:name=".sharedpreferences.get_data.GetDataSPActivity"
+        android:label="Get SP" />
+
+    <activity android:name=".sharedpreferences.encrypted.EncryptedSPActivity"
+        android:label="Encrypted SP" />
+
+    <activity android:name=".room.basic.BasicRoomActivity"
+        android:label="Basic Room" />
   </application>
 
 </manifest>
