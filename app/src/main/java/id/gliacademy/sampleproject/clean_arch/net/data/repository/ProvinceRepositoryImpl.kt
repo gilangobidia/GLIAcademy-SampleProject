@@ -10,8 +10,10 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
+import javax.inject.Inject
 
-class ProvinceRepositoryImpl(private val apiService: ApiService): ProvinceRepository {
+class ProvinceRepositoryImpl @Inject constructor(private val apiService: ApiService) :
+  ProvinceRepository {
 
   override suspend fun getProvinces(): Flow<ProvinceEntity> {
     return flow {

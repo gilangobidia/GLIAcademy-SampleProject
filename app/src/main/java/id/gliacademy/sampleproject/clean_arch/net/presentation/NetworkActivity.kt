@@ -4,39 +4,41 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
-import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
+import id.gliacademy.sampleproject.MyApplication
 import id.gliacademy.sampleproject.clean_arch.net.domain.ProvinceEntity
 import id.gliacademy.sampleproject.clean_arch.net.domain.ProvinceItemModel
 import id.gliacademy.sampleproject.databinding.ActivityCleanArchNetworkBinding
+import javax.inject.Inject
 
 class NetworkActivity: AppCompatActivity() {
 
   private lateinit var binding: ActivityCleanArchNetworkBinding
 
-  private lateinit var viewModel: ProvinceViewModel
-
   private lateinit var provinceAdapter: ProvinceAdapter
 
+  @Inject
+  lateinit var factory: ProvinceViewModelFactory
+
+  private val viewModel: ProvinceViewModel by viewModels {
+    factory
+  }
+
   override fun onCreate(savedInstanceState: Bundle?) {
+    (application as MyApplication).appComponent.inject(this)
     super.onCreate(savedInstanceState)
     binding = ActivityCleanArchNetworkBinding.inflate(layoutInflater)
     setContentView(binding.root)
 
     setupRecyclerViewProvince()
 
-    setupViewModel()
     setupObserve()
 
 
     viewModel.getProvinces()
-  }
-
-  private fun setupViewModel() {
-    val factory = ProvinceViewModelFactory.getInstance()
-    viewModel = ViewModelProvider(this, factory)[ProvinceViewModel::class.java]
   }
 
   private fun setupObserve() {
