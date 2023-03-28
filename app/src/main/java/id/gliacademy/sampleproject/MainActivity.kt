@@ -2,11 +2,9 @@ package id.gliacademy.sampleproject
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import id.gliacademy.sampleproject.api.ApiActivity
+import id.gliacademy.sampleproject.clean_arch.net.presentation.NetworkActivity
+import id.gliacademy.sampleproject.clean_arch.simple.presentation.SimpleActivity
 import id.gliacademy.sampleproject.databinding.ActivityMainBinding
-import id.gliacademy.sampleproject.livedata.LiveDataActivity
-import id.gliacademy.sampleproject.viewmodel.ViewModelActivity
-import id.gliacademy.sampleproject.viewmodel.WithoutViewModelActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -22,28 +20,12 @@ class MainActivity : AppCompatActivity() {
 
   private fun setupListener() {
     binding.run {
-      btnWithoutViewModel.setOnClickListener {
-        startActivity(WithoutViewModelActivity.newIntent(this@MainActivity))
+      btnCleanArchSimple.setOnClickListener {
+        startActivity(SimpleActivity.newIntent(this@MainActivity))
       }
 
-      btnViewModel.setOnClickListener {
-        startActivity(ViewModelActivity.newIntent(this@MainActivity))
-      }
-
-      btnLiveData.setOnClickListener {
-        startActivity(LiveDataActivity.newIntent(this@MainActivity))
-      }
-
-      btnApi.setOnClickListener {
-        startActivity(ApiActivity.newIntent(this@MainActivity))
-      }
-
-      btnApi2.setOnClickListener {
-        startActivity(id.gliacademy.sampleproject.api_arch.view.ApiActivity.newIntent(this@MainActivity))
-      }
-
-      btnApiRxJava.setOnClickListener {
-        startActivity(id.gliacademy.sampleproject.rxjava.view.ApiActivity.newIntent(this@MainActivity))
+      btnCleanArchNetwork.setOnClickListener {
+        startActivity(NetworkActivity.newIntent(this@MainActivity))
       }
     }
   }

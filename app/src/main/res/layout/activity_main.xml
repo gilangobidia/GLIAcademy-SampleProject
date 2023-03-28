@@ -2,7 +2,6 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:fillViewport="true"
     >
@@ -13,45 +12,17 @@
       android:padding="16dp">
 
     <Button
-        android:id="@+id/btn_without_view_model"
+        android:id="@+id/btn_clean_arch_simple"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tanpa ViewModel"
+        android:text="Simple Clean Architecture"
         />
 
     <Button
-        android:id="@+id/btn_view_model"
+        android:id="@+id/btn_clean_arch_network"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ViewModel"
-        />
-
-    <Button
-        android:id="@+id/btn_live_data"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="ViewModel LiveData"
-        />
-
-    <Button
-        android:id="@+id/btn_api"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="ViewModel LiveData API"
-        />
-
-    <Button
-        android:id="@+id/btn_api_2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="ViewModel LiveData API 2"
-        />
-
-    <Button
-        android:id="@+id/btn_api_rx_java"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="ViewModel LiveData API RxJava"
+        android:text="Clean Architecture + Network"
         />
 
   </LinearLayout>

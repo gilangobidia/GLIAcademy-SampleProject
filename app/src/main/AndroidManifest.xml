@@ -21,12 +21,11 @@
       </intent-filter>
     </activity>
 
-    <activity android:name=".viewmodel.WithoutViewModelActivity" />
-    <activity android:name=".viewmodel.ViewModelActivity" />
-    <activity android:name=".livedata.LiveDataActivity" />
-    <activity android:name=".api.ApiActivity" />
-    <activity android:name=".api_arch.view.ApiActivity" />
-    <activity android:name=".rxjava.view.ApiActivity" />
+    <activity android:name=".clean_arch.simple.presentation.SimpleActivity"
+        android:label="Simple Clean Arch"/>
+
+    <activity android:name=".clean_arch.net.presentation.NetworkActivity"
+        android:label="Clean Arch with Network" />
   </application>
 
 </manifest>
