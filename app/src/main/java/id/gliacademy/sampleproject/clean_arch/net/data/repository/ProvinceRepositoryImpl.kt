@@ -1,9 +1,11 @@
 package id.gliacademy.sampleproject.clean_arch.net.data.repository
 
+import android.util.Log
 import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.PagingData
 import androidx.paging.cachedIn
+import com.google.gson.Gson
 import id.gliacademy.sampleproject.clean_arch.net.data.repository.network.services.ApiService
 import id.gliacademy.sampleproject.clean_arch.net.data.repository.network.services.MoviesListPagingSource
 import id.gliacademy.sampleproject.clean_arch.net.data.repository.network.services.Province
@@ -26,8 +28,10 @@ class ProvinceRepositoryImpl @Inject constructor(private val apiService: ApiServ
     return flow {
       try {
         val response = apiService.getProvinces()
-        emit(ProvinceEntity(STATE_SUCCESS, Province.transforms(response.province ?: arrayListOf())))
+        Log.i("TAG", "getProvinces: response"+ Gson().toJson(response))
+        emit(ProvinceEntity(STATE_SUCCESS, Province.transforms(response ?: arrayListOf())))
       } catch (e: Throwable) {
+        Log.i("TAG", "getProvinces: "+ e)
         emit(ProvinceEntity(STATE_ERROR, arrayListOf()))
       }
     }.flowOn(Dispatchers.IO)

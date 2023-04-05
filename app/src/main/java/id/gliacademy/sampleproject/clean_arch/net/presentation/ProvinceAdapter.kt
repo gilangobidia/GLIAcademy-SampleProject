@@ -35,7 +35,8 @@ class ProvinceAdapter : RecyclerView.Adapter<ViewHolder>() {
   class ViewHolder(val binding: ItemProvinceBinding) : RecyclerView.ViewHolder(binding.root) {
 
     fun bindData(province: ProvinceItemModel) {
-      binding.tvProvince.text = province.nama
+      binding.idJudul.text = province.pH
+      binding.idDetail.text = province.Fat
     }
   }
 }

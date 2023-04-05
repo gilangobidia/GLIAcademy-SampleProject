@@ -19,7 +19,7 @@ class NetworkModule {
       .addInterceptor(loggingInterceptor)
       .build()
     val retrofit = Retrofit.Builder()
-      .baseUrl("https://dev.farizdotid.com/api/daerahindonesia/")
+      .baseUrl("http://10.0.2.2:8000/")//"https://dev.farizdotid.com/api/daerahindonesia/")  10.0.2.2
       .addConverterFactory(GsonConverterFactory.create())
       .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
       .client(client)

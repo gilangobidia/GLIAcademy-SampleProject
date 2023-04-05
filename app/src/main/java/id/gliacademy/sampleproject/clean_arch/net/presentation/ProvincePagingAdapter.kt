@@ -18,7 +18,7 @@ class ProvincePagingAdapter :
         oldItem: ProvinceItemModel,
         newItem: ProvinceItemModel
       ): Boolean {
-        return (oldItem.id == newItem.id)
+        return (oldItem.No == newItem.No)
       }
 
       override fun areContentsTheSame(
@@ -31,7 +31,7 @@ class ProvincePagingAdapter :
   class ProvinceViewHolder(val binding: ItemProvinceBinding) :
     RecyclerView.ViewHolder(binding.root) {
     fun bindData(province: ProvinceItemModel) {
-      binding.tvProvince.text = province.nama
+      //binding.tvProvince.text = province.nama
     }
   }
 

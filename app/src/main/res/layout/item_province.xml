@@ -1,20 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    >
-
-  <TextView
-      android:id="@+id/tv_province"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+  <androidx.cardview.widget.CardView
+      android:layout_marginStart="1dp"
+      android:layout_marginEnd="13dp"
+      android:layout_marginTop="1dp"
+      android:layout_marginBottom="1dp"
+      app:cardCornerRadius="10dp"
+      android:elevation="2dp"
       android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_margin="16dp"
-      android:textSize="18sp"
-      app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintBottom_toBottomOf="parent"
-      tools:text="Banten"/>
+      android:layout_height="wrap_content">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/idrelmenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+      <TextView
+          android:maxLines="2"
+          android:ellipsize="end"
+          android:id="@+id/id_judul"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginRight="10dp"
+          android:text=""
+          android:textColor="@color/black"
+          android:textSize="14sp" />
+
+      <TextView
+          android:id="@+id/id_detail"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="10dp"
+          android:text=""
+          android:textSize="12sp" />
+      <View
+          android:background="@color/md_grey_100"
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginBottom="10dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:text=""
+          android:textSize="12sp" />
+      <RatingBar
+          android:layout_marginBottom="30dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:id="@+id/listitemrating"
+          style="?android:attr/ratingBarStyleSmall"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:scaleX=".5"
+          android:scaleY=".5"
+          android:transformPivotX="0dp"
+          android:transformPivotY="0dp"
+          android:isIndicator="true"
+          android:max="5" />
+    </LinearLayout>
+
+  </androidx.cardview.widget.CardView>
+</RelativeLayout>

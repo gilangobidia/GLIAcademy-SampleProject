@@ -35,7 +35,7 @@ class ProvinceAdapter() :
   class ViewHolder(val binding: ItemProvinceBinding) : RecyclerView.ViewHolder(binding.root) {
 
     fun bindData(province: Province) {
-      binding.tvProvince.text = province.nama
+      //binding.tvProvince.text = province.nama
     }
   }
 }

@@ -1,11 +1,13 @@
 package id.gliacademy.sampleproject.clean_arch.net.data.repository.network.services
 
 import retrofit2.http.GET
+import retrofit2.http.Headers
 import retrofit2.http.Query
 
 interface ApiService {
-  @GET("provinsi")
-  suspend fun getProvinces(): ProvinceResponse
+  @Headers("Content-Type: application/json")
+  @GET("lara")
+  suspend fun getProvinces(): List<Province>
 
   @GET("provinsi")
   suspend fun getProvinces(
